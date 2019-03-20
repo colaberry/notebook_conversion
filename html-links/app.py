@@ -1,11 +1,11 @@
 import os
+from paths import relativepaths as rl
 
 def main():        
         # singleCommand = 'jupyter nbconvert --to html htmlFiles/{0}'
         multiplefileCommand = 'jupyter nbconvert '
         allFiles = ''
-        directory='notebooks' ## Use '.' if the files are in the same directory 
-        # directory='allFiles'
+        directory=rl['bigFiles'] 
 
         for root, dirs, files in os.walk(directory):
                 for filename in files:
