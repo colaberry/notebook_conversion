@@ -1,0 +1,5 @@
+app.py
+	a. get the files from the directory of .ipynb 
+	b. using the nbc convert them to .html
+	c. check the time 
+
