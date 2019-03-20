@@ -14,5 +14,8 @@ def main():
         p=multiplefileCommand+allFiles
         os.system(p)
 
+def relocate():
+        pass
+
 if __name__ == "__main__":
     main()
