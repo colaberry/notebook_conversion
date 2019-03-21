@@ -17,7 +17,7 @@ A standalone python application for benchmarking conversion of `*.ipynb` to `.ht
 - Code should not exceed 80 characters.
 - Please do not push `.pyc` files or any dunder files (like \__pycache\__)
 
-**Steps to Reproduce**
+**Steps to Run notebook_conversion locally**
 
 - git clone the repository `https://github.com/colaberry/notebook_conversion`
 - `cd notebook_conversion`
