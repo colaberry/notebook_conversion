@@ -1,0 +1,2 @@
+ipython==7.4.0
+nbconvert==5.4.1
