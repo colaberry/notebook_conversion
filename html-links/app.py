@@ -29,8 +29,7 @@ def convert_ipynb_html(dir: str):
 
 def relocate(dir: str):
     create_file = 'mkdir static_html'
-    static_html_directory = os.getcwd()+'\static_html'
-    # created_path_command = 'mv {0}/{1} static_html/'
+    static_html_directory = os.getcwd()+'/static_html'
     relocate_command = 'mv {0}/{1} '+static_html_directory
 
     try:
@@ -41,7 +40,6 @@ def relocate(dir: str):
     for _,_,files in os.walk(rl[dir]):
         for filename in files:
             if '.html' in filename:
-                # os.system(created_path_command.format(rl[dir], filename))
                 os.system(relocate_command.format(rl[dir], filename))      
     
 if __name__ == "__main__":
