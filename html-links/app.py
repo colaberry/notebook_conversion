@@ -32,11 +32,11 @@ def relocate(dir: str):
     static_html_directory = os.getcwd()+'/static_html'
     relocate_command = 'mv {0}/{1} '+static_html_directory
 
-    try:
+    if (os.path.exists(static_html_directory)):
+        pass
+    else:
         os.system(create_file)
-    except:
-        print('Already Exists')
-
+        
     for _,_,files in os.walk(rl[dir]):
         for filename in files:
             if '.html' in filename:
